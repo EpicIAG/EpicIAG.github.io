@@ -1,0 +1,166 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
+
+/* Banner */
+
+#banner {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    padding: 8em 4em 6em 4em;
+    min-height: 70vh;
+    background-image: url("../../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+    #banner .inner {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    #banner h1 {
+        color: #fff;
+        font-size: 5em;
+        font-weight: 400;
+        font-family: 'Passion One', cursive;
+        margin: 0;
+    }
+
+        @media screen and (max-width: 980px) {
+
+            #banner h1 {
+                font-size: 5em;
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            #banner h1 {
+                font-size: 3em;
+            }
+
+        }
+
+    #banner p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+
+        @media screen and (max-width: 980px) {
+
+            #banner p {
+                font-size: 1.5em;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #banner p {
+                font-size: 1.25em;
+            }
+
+        }
+
+    #banner a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+    }
+
+        #banner a:hover {
+            color: rgb(3, 2, 2);
+            border: none;
+        }
+
+ 
+
+    body.is-loading #banner:before {
+        opacity: 1;
+    }
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-shadow: 2px 1px rgb(196, 199, 11);
+    color: chocolate;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman';
+}
+
+h3 {
+    color: aliceblue;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(3, 27, 17);
+    padding: 2%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.card {
+    flex: 0 1 calc(32% - 1rem);
+    max-width: calc(32% - 1rem);
+    background-color: rgb(15, 14, 10);
+    margin: 1%;
+}
+
+.cardP {
+    width: 100%;
+}
+
+.description {
+    color: white;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    border: 2vh rgb(61, 61, 17) solid;
+    text-shadow: 2px 2px rgb(75, 16, 16);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .card {
+        flex: 0 1 calc(48% - 1rem);
+        max-width: calc(48% - 1rem);
+    }
+}
+
