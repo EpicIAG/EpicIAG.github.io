@@ -52,18 +52,43 @@
         
             <hr style="clear:both"> -->
 
-            <h1 class="welcome">WELCOME TO EPIC-LIGHT <br>
+            <h1 class="welcome">EPIC-LIGHT <br>
                 <img src="images/glogo.jpg" alt ="logo" id="logo">
                  <h3>LEARN, CONNECT, AND GROW WITH SUBMISSION</h3>
             </h1>
         </main>
 
         <section class="section1">
-                <div class="books">
-                    <a href="#" style="clear: both;"> <img src="images/books.jpg" alt="BOOKS" width="100%"></a>
-                    <button class="btn">BOOKS</button> 
-                 </div>
+           
+<div class="books">
+    <a href="#" onclick="openModal()"> 
+        <img src="images/books.jpg" alt="BOOKS" width="100%">
+    </a>
+    <button class="btn" onclick="openModal()">BOOKS</button> 
+</div>
 
+<!-- The Modal -->
+<div id="myModal" class="modal1">
+    <div class="modal-content">
+        <!-- Content from the link -->
+        <iframe src="https://sharether.com/document.php" style="width: 100%; height: 80vh;"></iframe>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        // Display the modal
+        document.getElementById('myModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+        // Hide the modal
+        document.getElementById('myModal').style.display = 'none';
+    }
+</script>
+            </div>
+            
                 <div class="blogs">
                     <a href="" style="clear:both;"> <img src="images/articles.jpg" alt="Blogs" width="100%"></a>
                     <button class="btn" onclick="blogLink">BLOGS</button>  
@@ -77,10 +102,7 @@
                     <a href="#" style="clear:both;"> <img src="images/articles.jpg" alt="Articles" width="100%"></a>
                     <button class="btn">ARTICLES</button> 
                 </div>
-        </section>
-        <hr style="margin-top: 7%;">
-
-        <section class="section2", style="clear: both;">
+        
             <div class="videos">
                 <a href="videos/videoG.html" style="clear: both;"> <img src="images/blogs.jpg" alt="Videos" width="100%"></a>
                 <button class="btn" onclick="videoLink()">VIDEOS</button> 
@@ -90,6 +112,35 @@
                     }
                 </script>
              </div>
+             <div class="audios">
+                <a href="https://mytunein.com/epiclightradio" style="clear:both;"> <img src="images/blogs.jpg"
+                        alt="Audios" width="100%"></a>
+                <button class="btn" onclick="openRadioModal()">LIFE RADIO</button>
+            </div>
+        
+            <!-- Modal content -->
+            <div id="radioModal" class="modal">
+                <iframe src="https://mytunein.com/epiclightradio" width="100%" height="100%" frameborder="0"
+            allowfullscreen></iframe>
+                <!-- Close button for the modal -->
+                <button onclick="closeRadioModal()">Close</button>
+            </div>
+        
+            <!-- Modal overlay (to darken the background when the modal is open) -->
+            <div id="modalOverlay" class="modal-overlay"></div>
+        
+            <script>
+                function openRadioModal() {
+                    document.getElementById('radioModal').style.display = 'block';
+                    document.getElementById('modalOverlay').style.display = 'block';
+                }
+        
+                function closeRadioModal() {
+                    document.getElementById('radioModal').style.display = 'none';
+                    document.getElementById('modalOverlay').style.display = 'none';
+                }
+            </script>
+            </div>
             <div class="audios">
                 <a href="https://mytunein.com/epiclightradio" style="clear:both;"> <img src="images/blogs.jpg" alt="Audios" width="100%"></a>
                 <button class="btn" onclick="playRadio()">LIFE RADIO</button> 
@@ -99,18 +150,15 @@
                     }
                 </script>
             </div>
-            <div class="ai">
-                <a href="https://chat.openai.com/c/1effaf29-122c-4a2e-8bcc-f73860cd0f42" target="_self" style="clear: both;"> <img src="images/blogs.jpg" alt="Videos" width="100%"></a>
-                <button class="btn" onclick="AILink()">EPIC AI</button> 
-                <script>
-                    function AILink() {
-                        window.location.href = "https://chat.openai.com/c/1effaf29-122c-4a2e-8bcc-f73860cd0f42";
-                    }
-                </script>
-            </div>
-                
 
+            <audio autoplay>
+                <source src="sami.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
         </section>
+
+
+       
 
 
 
@@ -135,44 +183,23 @@
 						<p class="copyright">&copy;2024 EPIC_LIGHT . | Designed By: Ali Ismail</p>
 
 
+           <!-- Container for the AI button and image -->
+            <div class="ai">
+                <button class="redirect-button" onclick="EpicAI()">EpicAI</button>
+            </div>
 
-
-
-                        <script type='text/javascript' src='https://www.botlibre.com/scripts/sdk.js'></script>
-<script type='text/javascript' src='https://www.botlibre.com/scripts/game-sdk.js'></script>
-<script type='text/javascript'>
-SDK.applicationId = "6372673027513045908";
-SDK.backlinkURL = "http://www.botlibre.com/login?affiliate=epiclight";
-SDK.lang = "en";
-var sdk = new SDKConnection();
-var web = new WebChatbotListener();
-web.connection = sdk;
-web.instance = "50899810";
-web.instanceName = "Epiclight ";
-web.prefix = "botplatform";
-web.caption = "Chat Now";
-web.boxLocation = "bottom-right";
-web.color = "#009900";
-web.background = "#fff";
-web.css = "https://www.botlibre.com/css/chatlog.css";
-web.gameSDKcss = "https://www.botlibre.com/css/game-sdk.css"; 
-web.buttoncss ="https://www.botlibre.com/css/blue_round_button.css"; 
-web.version = 8.5;
-web.bubble = true;
-web.backlink = true;
-web.showMenubar = true;
-web.showBoxmax = true;
-web.showSendImage = true;
-web.showChooseLanguage = true;
-web.avatar = true;
-web.chatLog = true;
-web.popupURL = "https://www.botlibre.com/chat?&id=50899810&embedded=true&chatLog=true&facebookLogin=false&application=6372673027513045908&bubble=true&menubar=true&chooseLanguage=true&sendImage=true&background=%23fff&prompt=You+say&send=&css=https://www.botlibre.com/css/chatlog.css&language=en";
-web.createBox();
-</script>
+             <script>
+        // Function to redirect to a specific URL
+                function EpicAI() {
+                 window.location.href = "https://chat.openai.com/c/c6167b90-3b9d-4d08-9c8b-e7307d67904a";
+        }
+         </script>
 
 					</div>
                     
 				</footer>
+
+               
 
            
 
