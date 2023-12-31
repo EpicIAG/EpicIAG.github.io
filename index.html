@@ -61,21 +61,19 @@
         <section class="section1">
            
 <div class="books">
-    <a href="#" onclick="openModal()"> 
-        <img src="images/books.jpg" alt="BOOKS" width="100%">
+    <a href="https://sharether.com/document.php" onclick="openModal()"> 
+        <img src="images/books.jpg" alt="BOOKS" width="100%" title="College Books">
     </a>
     <button class="btn" onclick="openModal()">BOOKS</button> 
 </div>
-
 <!-- The Modal -->
 <div id="myModal" class="modal1">
     <div class="modal-content">
         <!-- Content from the link -->
-        <iframe src="https://sharether.com/document.php" style="width: 100%; height: 80vh;"></iframe>
+        <iframe src="https://pdfdrive.to" style="width: 100%; height: 80vh;"></iframe>
         <button onclick="closeModal()">Close</button>
     </div>
 </div>
-
 <script>
     function openModal() {
         // Display the modal
@@ -88,8 +86,10 @@
     }
 </script>
             </div>
+
+
             
-                <div class="blogs">
+            <div class="blogs">
                     <a href="" style="clear:both;"> <img src="images/articles.jpg" alt="Blogs" width="100%"></a>
                     <button class="btn" onclick="blogLink">BLOGS</button>  
                     <script>
@@ -97,11 +97,13 @@
                             window.location.href = "videos/videoG.html";
                         }
                     </script>                  
-                </div>
-                <div class="articles">
+            </div>
+
+
+            <div class="articles">
                     <a href="#" style="clear:both;"> <img src="images/articles.jpg" alt="Articles" width="100%"></a>
                     <button class="btn">ARTICLES</button> 
-                </div>
+            </div>
         
             <div class="videos">
                 <a href="videos/videoG.html" style="clear: both;"> <img src="images/blogs.jpg" alt="Videos" width="100%"></a>
@@ -112,35 +114,35 @@
                     }
                 </script>
              </div>
+
              <div class="audios">
-                <a href="https://mytunein.com/epiclightradio" style="clear:both;"> <img src="images/blogs.jpg"
+                <a href="https://muslimcentral.com/" style="clear:both;"> <img src="images/blogs.jpg"
                         alt="Audios" width="100%"></a>
-                <button class="btn" onclick="openRadioModal()">LIFE RADIO</button>
+                <button class="btn" onclick="openAudioModal()">ISLAMIC AUDIOS</button>
             </div>
-        
             <!-- Modal content -->
-            <div id="radioModal" class="modal">
-                <iframe src="https://mytunein.com/epiclightradio" width="100%" height="100%" frameborder="0"
+            <div id="audioModal" class="modal">
+                <iframe src="https://muslimcentral.com/" width="100%" height="100%" frameborder="0"
             allowfullscreen></iframe>
                 <!-- Close button for the modal -->
-                <button onclick="closeRadioModal()">Close</button>
+                <button onclick="closeAudioModal()">Close</button>
             </div>
-        
             <!-- Modal overlay (to darken the background when the modal is open) -->
             <div id="modalOverlay" class="modal-overlay"></div>
-        
             <script>
-                function openRadioModal() {
-                    document.getElementById('radioModal').style.display = 'block';
+                function openAudioModal() {
+                    document.getElementById('audioModal').style.display = 'block';
                     document.getElementById('modalOverlay').style.display = 'block';
                 }
         
-                function closeRadioModal() {
-                    document.getElementById('radioModal').style.display = 'none';
+                function closeAudioModal() {
+                    document.getElementById('audioModal').style.display = 'none';
                     document.getElementById('modalOverlay').style.display = 'none';
                 }
             </script>
             </div>
+
+
             <div class="audios">
                 <a href="https://mytunein.com/epiclightradio" style="clear:both;"> <img src="images/blogs.jpg" alt="Audios" width="100%"></a>
                 <button class="btn" onclick="playRadio()">LIFE RADIO</button> 
@@ -151,9 +153,9 @@
                 </script>
             </div>
 
-            <audio autoplay>
+            <audio autoplay class="ai">
                 <source src="sami.mp3" type="audio/mp3">
-                Your browser does not support the audio tag.
+                d
             </audio>
         </section>
 
@@ -169,7 +171,7 @@
 					<div class="inner">
 						<h2>EPIC LIGHT<br></h2>
 						<p> In the name of Allah the most Gracious the Most Merciful </p> 
-                    <iframe src="https://zeno.fm/player/epic-light"  height="70%" width="70%" scrolling="no"></iframe><a href="https://zeno.fm/" target="_blank" style="display: block; font-size: 0.9em; line-height: 10px;">A Zeno.FM Station</a>
+                    <iframe src="https://zeno.fm/player/epic-light"  height="5%" width="70%" scrolling="no"></iframe><a href="https://zeno.fm/" target="_blank" style="display: block; font-size: 0.9em; line-height: 10px;">A Zeno.FM Station</a>
                     <ul style="margin: 4%;">
                         <li style="margin-right: 15%; list-style: none;"><a href="https://studentioe.ucc.edu.gh">Go To Your UCC Portal</a></li>
                         <li><a href="#">Go To Your Foso College Portal</a></li>
@@ -187,7 +189,6 @@
             <div class="ai">
                 <button class="redirect-button" onclick="EpicAI()">EpicAI</button>
             </div>
-
              <script>
         // Function to redirect to a specific URL
                 function EpicAI() {
