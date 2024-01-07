@@ -2,10 +2,19 @@
 
 <html>
 	<head>
-		<title>Documenties And Movies.epic light</title>
+		<title>Documenties And Movies</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script>
+			function popupVideo(videoID) {
+				var popupVideo = 'https://www.youtube.com/embed/' + videoID + '?autoplay=1'
+				window.open(popupVideo, 'Video Popup', 'width= 800, height= 600, scrollbars=no, resizable=no')
+			}
+	
+		</script>
+
 	</head>
 	<body id="top">
 
@@ -172,12 +181,11 @@
 							</div>
 
 							<div class="box">
-								<a href="https://youtu.be/pDGQm7JeKMY" class="image fit"><img src="https://img.youtube.com/vi/xXAdfgwL9YM/maxresdefault.jpg
-									" alt="" /></a>
+								<a href="" class="image fit"><img src="https://img.youtube.com/vi/xXAdfgwL9YM/maxresdefault.jpg " alt="" /></a>
 								<div class="inner">
 									<h3>ROBIN HOOD </h3>
 									<p>A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown in a thrilling action-adventure packed with gritty battlefield exploits, mind-blowing fight choreography.</p>
-									<a href="https://youtu.be/pDGQm7JeKMY" class="button fit" data-poptrox="youtube,800x400">Watch</a>
+								   <button class="button fit" onclick="popupVideo('pDGQm7JeKMY')">Watch</button>
 								</div>
 							</div>
 
