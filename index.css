@@ -154,17 +154,32 @@ body {
 }
 
 .btn {
-    margin-right: 30%;
-    margin-right: auto;
-    border-radius: 50%;
-    box-shadow: 1px 2px rgb(3, 54, 26);
-    font-family: Georgia, Courier, 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    padding: 2%;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #021614;
+		border-radius: 10px;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 400;
+		height: 2.85em;
+        width: 80%;
+		line-height: 2.95em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
 }
 
 .btn:hover {
-    background-image: url(glogo.png);
+    background-color: black;
 }
 
 /* Footer */
